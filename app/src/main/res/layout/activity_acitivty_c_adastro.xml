@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcitivtyCAdastro">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azul_claro"
+            app:title="Cadastro Usuario"
+            app:titleTextColor="@color/branco"
+
+            />
+
+    <EditText
+        android:id="@+id/cadastro_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DIGITE SEU NOME"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tool_bar"
+        />
+
+    <EditText
+        android:id="@+id/cadastro_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DIGITE SEU EMAIL"
+        android:layout_below="@id/cadastro_nome"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/cadastro_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DIGITE SUA SENHA"
+        android:layout_below="@id/cadastro_email"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/salvar_cadastro_oio"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cadastro_senha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="SALVAR"
+        android:textColor="@color/branco"
+        android:background="@drawable/shape_button"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azul_claro"
+    >
+
+    <TextView
+        android:id="@+id/titulo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/branco"
+        android:text="Quiz"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/get_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Digite Email"
+        android:textStyle="bold"
+        android:layout_below="@id/titulo_app"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_hint"
+        />
+
+    <EditText
+        android:id="@+id/get_senha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/get_email"
+        android:hint="Senha"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_hint"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/button_entrar"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/get_senha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="ENTRAR"
+        android:background="@drawable/shape_button_inicio"
+        />
+
+    <Button
+        android:id="@+id/button_cadastrar"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/button_entrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button_inicio"
+        android:text="cadastrar"
+        />
+
+    <Button
+        android:id="@+id/button_entrar_sem_login"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/button_cadastrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="Jogar  sem LOGIN"
+        android:background="@drawable/shape_button_inicio"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>
